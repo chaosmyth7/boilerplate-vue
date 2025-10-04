@@ -1,12 +1,11 @@
-import './assets/main.css'
+import { createPinia } from "pinia"
+import { createApp } from "vue"
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import { i18n } from './plugins/language/index'
-
-import App from './App.vue'
-import router from './router'
-import { installVueQuery } from './plugins/tanstack'
+import App from "./App.vue"
+import "./assets/main.css"
+import { i18n } from "./plugins/language/index"
+import { installVueQuery } from "./plugins/tanstack"
+import router from "./router"
 
 const app = createApp(App)
 
@@ -15,4 +14,4 @@ app.use(router)
 app.use(i18n)
 installVueQuery(app)
 
-app.mount('#app')
+app.mount("#app")

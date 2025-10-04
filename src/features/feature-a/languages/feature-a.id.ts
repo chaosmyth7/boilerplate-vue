@@ -1,3 +1,3 @@
 export default {
-  feature_title: 'This is Feature A',
+  feature_title: "This is Feature A",
 }

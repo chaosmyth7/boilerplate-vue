@@ -1,4 +1,4 @@
-import type { AxiosRequestConfig } from 'axios'
+import type { AxiosRequestConfig } from "axios"
 
 /**
  * Custom Axios config that supports `meta.requiresAuth` flag.

@@ -1,4 +1,4 @@
-import { type VueQueryPluginOptions, QueryClient } from '@tanstack/vue-query'
+import { QueryClient, type VueQueryPluginOptions } from "@tanstack/vue-query"
 
 export const queryClient = new QueryClient({
   defaultOptions: {

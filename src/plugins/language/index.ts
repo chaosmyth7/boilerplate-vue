@@ -1,21 +1,22 @@
-import { createI18n } from 'vue-i18n'
-import { getBrowserLocale } from './get-browser-locale'
-import { languageMessages } from './locales'
+import { createI18n } from "vue-i18n"
 
-const defaultLocale = getBrowserLocale(['en', 'id'], 'en')
+import { getBrowserLocale } from "./get-browser-locale"
+import { languageMessages } from "./locales"
+
+const defaultLocale = getBrowserLocale(["en", "id"], "en")
 
 export type MessageLanguages = keyof typeof languageMessages
 
-export type MessageSchema = (typeof languageMessages)['id']
+export type MessageSchema = (typeof languageMessages)["id"]
 
 export const i18n = createI18n({
   legacy: false,
   locale: defaultLocale,
-  fallbackLocale: 'en',
+  fallbackLocale: "en",
   messages: languageMessages,
 })
 
-type DotNotationKeys<T, Prefix extends string = ''> = {
+type DotNotationKeys<T, Prefix extends string = ""> = {
   [K in keyof T]: T[K] extends string
     ? `${Prefix}${Extract<K, string>}`
     : DotNotationKeys<T[K], `${Prefix}${Extract<K, string>}.`>

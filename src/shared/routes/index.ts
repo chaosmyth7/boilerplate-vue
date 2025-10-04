@@ -1,11 +1,12 @@
-import type { RouteRecordRaw } from 'vue-router'
-import { UtilsPageName } from '../models'
+import type { RouteRecordRaw } from "vue-router"
+
+import { UtilsPageName } from "../models"
 
 const utilRoutes: RouteRecordRaw[] = [
   {
-    path: '/:pathMatch(.*)*',
+    path: "/:pathMatch(.*)*",
     name: UtilsPageName.PAGE_NOT_FOUND,
-    component: () => import('@/shared/views/PageNotFound.vue'),
+    component: () => import("@/shared/views/PageNotFound.vue"),
   },
 ]
 

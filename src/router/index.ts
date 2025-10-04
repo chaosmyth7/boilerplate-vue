@@ -1,7 +1,7 @@
-import featureARoutes from '@/features/feature-a/routes'
-import utilRoutes from '@/shared/routes'
+import { createRouter, createWebHistory } from "vue-router"
 
-import { createRouter, createWebHistory } from 'vue-router'
+import featureARoutes from "@/features/feature-a/routes"
+import utilRoutes from "@/shared/routes"
 
 const listRoutes = [...featureARoutes, ...utilRoutes]
 
