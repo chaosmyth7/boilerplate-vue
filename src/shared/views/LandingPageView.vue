@@ -4,7 +4,7 @@
   >
     <div class="text-center max-w-2xl animate-fade-in">
       <h1 class="text-6xl font-extrabold tracking-tight mb-4">
-        <span class="text-green-500">chaosmyth7</span> Boilerplate
+        <span class="text-green-500">Vue</span> Boilerplate
       </h1>
 
       <p class="text-lg text-gray-300 mb-6 leading-relaxed">
